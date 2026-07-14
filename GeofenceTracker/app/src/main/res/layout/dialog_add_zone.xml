@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa strefy (np. Biuro)" />
+
+    <EditText
+        android:id="@+id/editLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Szerokość geograficzna (lat)"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/editLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Długość geograficzna (lng)"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/editRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Promień w metrach (np. 100)"
+        android:inputType="number"
+        android:text="100" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:text="Wskazówka: współrzędne skopiuj z Mapy Google (przytrzymaj punkt na mapie)." />
+
+</LinearLayout>
